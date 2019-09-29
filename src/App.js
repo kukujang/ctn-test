@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter,Route,Switch} from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from './containers/Home';
 import ViewContent from './containers/ViewContent';
 import ViewCategory from './containers/ViewCategory';
@@ -10,13 +10,13 @@ class App extends Component {
   renderRouter(){
     return(
       <Switch>
-        <Route exact path='/' component={Home} />
 				<Route path='/content' component={ViewContent} />
 				<Route path='/category' component={ViewCategory} />
 				<Route path='/filter' component={ViewFilter} />
 
 				<Route path='/library' component={ViewMain} />
 				<Route path='/ranking' component={ViewMain} />
+        <Route path='/' component={Home} />
       </Switch>
     )
   }
