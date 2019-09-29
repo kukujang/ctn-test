@@ -345,50 +345,57 @@ img {
       color: $color-grey;
     }
   }
-  &.show1hi li:nth-child(1),
-  &.show2hi li:nth-child(1),
-  &.show2hi li:nth-child(2) {
-    flex: 0 0 100%;
-    margin: 0 0 .5rem 0;
-    .thumb {
-      float: left;
-      width: calc(33.3333% - 2rem);
-      margin-right: 1rem;
+  @include media-breakpoint-min-md {
+    li {
+      flex: 0 0 25%;
     }
-    .title,
-    .desc {
-      float: left;
-      display: block;
-      width: 68%;
-    }
-    .title {
-      margin: 1rem 0 .5rem 0;
-      max-height: 25px;
-      overflow: hidden;
-      position: relative;
-      text-align: left;
-      @include media-breakpoint-max-sm {
-        margin-top: 0;
-        max-height: 19px;
+  }
+  @include media-breakpoint-max-md {
+    &.show1hi li:nth-child(1),
+    &.show2hi li:nth-child(1),
+    &.show2hi li:nth-child(2) {
+      flex: 0 0 100%;
+      margin: 0 0 .5rem 0;
+      .thumb {
+        float: left;
+        width: calc(33.3333% - 2rem);
+        margin-right: 1rem;
       }
-    }
-    .desc {
-      color: $color-grey;
-      margin-bottom: .5rem;
-      max-height: 76px;
-      overflow: hidden;
-      position: relative;
-      @include media-breakpoint-max-sm {
-        max-height: 57px;
+      .title,
+      .desc {
+        float: left;
+        display: block;
+        width: 68%;
       }
-    }
-    .author {
-      display: inline-block;
-      margin-right: .5rem;
-      color: $color-black;
-    }
-    .cname {
-      display: inline-block;
+      .title {
+        margin: 1rem 0 .5rem 0;
+        max-height: 25px;
+        overflow: hidden;
+        position: relative;
+        text-align: left;
+        @include media-breakpoint-max-sm {
+          margin-top: 0;
+          max-height: 19px;
+        }
+      }
+      .desc {
+        color: $color-grey;
+        margin-bottom: .5rem;
+        max-height: 76px;
+        overflow: hidden;
+        position: relative;
+        @include media-breakpoint-max-sm {
+          max-height: 57px;
+        }
+      }
+      .author {
+        display: inline-block;
+        margin-right: .5rem;
+        color: $color-black;
+      }
+      .cname {
+        display: inline-block;
+      }
     }
   }
 }
@@ -399,6 +406,10 @@ img {
   margin: 0 -1rem;
   text-align: center;
   margin-top: 1rem;
+  @include media-breakpoint-min-md {
+    width: 70%;
+    margin: 0 auto;
+  }
   li {
     font-size: rem(14);
     flex-grow: 1;
