@@ -142,8 +142,16 @@ img {
   color: $color-white;
   height: 70px;
   text-align: center;
+  a {
+    color: $color-white;
+  }
   .btn {
     color: $color-white;
+  }
+  .dropdown {
+    a {
+      color: $color-black;
+    }
   }
   .form-control {
     background: url('../img/icon-magnifier.png') no-repeat 15px center $color-white;
@@ -168,6 +176,7 @@ img {
   a {
     display: block;
     padding: .5rem 0;
+    border-bottom: solid 3px $color-white;
   }
   a:hover,
   .active {
@@ -454,4 +463,10 @@ img {
       display: block;
     }
   }
+}
+
+.mock-text {
+  width: 100%;
+  text-align: center;
+  padding: 5rem;
 }

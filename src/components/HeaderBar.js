@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from 'react-router-dom';
 
 export default class HeaderBar extends Component {
   render() {
@@ -12,15 +13,15 @@ export default class HeaderBar extends Component {
                   <div className="dropdown">
                     <button className="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Male</button>
                     <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a className="dropdown-item" href=".">Male</a>
-                      <a className="dropdown-item" href=".">Female</a>
+                      <Link className="dropdown-item" to="/">Male</Link>
+                      <Link className="dropdown-item" to="/">Female</Link>
                     </div>
                   </div>
                 </div>
                 <div className="flex-grow-1">
                   <input type="text" className="form-control form-control-sm" placeholder="Search" />
                 </div>
-                <div className="pl-3">Genre</div>
+                <div className="pl-3"><Link to="/category">Genre</Link></div>
               </div>
             </div>
           </div>

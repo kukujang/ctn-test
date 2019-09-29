@@ -6,9 +6,60 @@ import shortid from 'shortid';
 
 class HerobannerList extends Component {
 
+  constructor(props) {
+		super(props);
+		this.state = {herobanners: ""};
+  }
+
+  componentDidMount() {
+
+		/*fetch("https://api.webnovelsapp.com/v5/base/banner_man.html",{method:"GET"})
+		.then(res_banner=>res_banner.json())
+		//.then(res_banner=>{console.log(res_banner)})
+		.then(res_banner=>{this.setState({herobanners:res_banner})})*/
+
+		this.setState({
+			herobanners: [
+				{
+					"status": 1,
+					"info": "111111",
+					"data": [
+						{
+							"type": "booklist",
+							"param": "1",
+							"imgurl": "https://down.webnovelsapp.com/shudan/images/1.jpg"
+						}
+					]
+				},
+				{
+					"status": 1,
+					"info": "222222",
+					"data": [
+						{
+							"type": "booklist",
+							"param": "1",
+							"imgurl": "https://down.webnovelsapp.com/shudan/images/1.jpg"
+						}
+					]
+				},
+				{
+					"status": 1,
+					"info": "333333",
+					"data": [
+						{
+							"type": "booklist",
+							"param": "1",
+							"imgurl": "https://down.webnovelsapp.com/shudan/images/1.jpg"
+						}
+					]
+				}
+			]
+		});
+	}
+  
   showHerobanner() {
-    if(this.props.herobanners) {
-      return this.props.herobanners.map(banner=>(
+    if(this.state.herobanners) {
+      return this.state.herobanners.map(banner=>(
         <HerobannerItem key={shortid.generate()} status={banner.status} info={banner.info} bannerimg={banner.data[0].imgurl} />
       ))
     } else {
