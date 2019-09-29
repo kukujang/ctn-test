@@ -1,0 +1,85 @@
+/* --------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------- */
+/* for mobile first */
+/* --------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------- */
+
+/* (mobiles, 0px and up) */
+@media (min-width: 0px) {
+}
+
+/* sm (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* md (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* lg (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* xl (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* (Laptop L, 1440px and up) */
+@media (min-width: 1440px) {
+}
+
+@media (min-width: 1600px) {
+}
+
+/* (Full HD, 1920px and up) */
+@media (min-width: 1920px) {
+}
+
+/* (QHD, 2560px and up) */
+@media (min-width: 2560px) {
+}
+
+/* (4K, UHD or Ultra HD, 3840px and up) */
+@media (min-width: 3840px) {
+}
+
+/* [fix] iPad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------- */
+/* for desktop first */
+/* --------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------- */
+
+/* (QHD, less than or = 2560px) */
+@media (max-width: 2560px) {
+}
+
+/* (Full HD, less than or = 1920px) */
+@media (max-width: 1920px) {
+}
+
+/* (Laptop L, less than or = 1440px) */
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1366px) {
+}
+
+/* xl || Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* lg || Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* md || Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* sm || Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}

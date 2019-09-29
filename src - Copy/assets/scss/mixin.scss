@@ -1,0 +1,132 @@
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+@mixin vh-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+@mixin vh-center-reset {
+  position: relative;
+  left: inherit;
+  top: inherit;
+  -webkit-transform: inherit;
+  transform: inherit;
+}
+@mixin v-center {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@mixin h-center {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+@mixin h-center-relative {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* (less than or = 2560px) */
+@mixin media-breakpoint-max-2560 {
+  @media (max-width: 2560px) {
+    @content;
+  }
+}
+/* (less than or = 1920px) */
+@mixin media-breakpoint-max-1920 {
+  @media (max-width: 1920px) {
+    @content;
+  }
+}
+/* (less than or = 1600px) */
+@mixin media-breakpoint-max-1600 {
+  @media (max-width: 1600px) {
+    @content;
+  }
+}
+/* (less than or = 1440px) */
+@mixin media-breakpoint-max-1440 {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+/* (less than or = 1366px) */
+@mixin media-breakpoint-max-1366 {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}
+/* xl || Large devices (desktops, less than 1200px) */
+@mixin media-breakpoint-max-xl {
+  @media (max-width: 1199.98px) {
+    @content;
+  }
+}
+@mixin media-breakpoint-min-xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+/* lg || Medium devices (tablets, less than 992px) */
+@mixin media-breakpoint-max-lg {
+  @media (max-width: 991.98px) {
+    @content;
+  }
+}
+@mixin media-breakpoint-min-lg {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+/* md || Small devices (landscape phones, less than 768px) */
+@mixin media-breakpoint-max-md {
+  @media (max-width: 767.98px) {
+    @content;
+  }
+}
+@mixin media-breakpoint-min-md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+/* sm || Extra small devices (portrait phones, less than 576px) */
+@mixin media-breakpoint-max-sm {
+  @media (max-width: 575.98px) {
+    @content;
+  }
+}
+@mixin media-breakpoint-min-sm {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+
+@mixin transition-all($speed) {
+  transition: all ($speed+s);
+}
+
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+  -moz-transform: rotate($degrees);
+  -ms-transform: rotate($degrees);
+  -o-transform: rotate($degrees);
+  transform: rotate($degrees);
+}
+
+@mixin avoid-click {
+  pointer-events: none !important;
+}
