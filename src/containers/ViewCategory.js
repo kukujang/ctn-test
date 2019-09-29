@@ -4,6 +4,9 @@ import MenuFixed from "../components/MenuFixed";
 import {Link} from 'react-router-dom';
 
 class ViewContent extends Component {
+	componentDidMount(){
+		window.scrollTo(0, 0);
+	}
 	render() {
 		return (
 			<div className="app">
@@ -14,7 +17,7 @@ class ViewContent extends Component {
 						<div className="col-12">
 
               
-              <div className="p-3">
+              <div className="block-view p-3">
 
                 <div className="mb-2">
                   <Link to="/">&lt; Back</Link>

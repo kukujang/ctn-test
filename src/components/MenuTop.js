@@ -7,8 +7,8 @@ export default class MenuTop extends Component {
       <div>
         <ul className="list-unstyled list-menu-top">
           <li><NavLink to="/filter/featured" activeClassName="active">Featured</NavLink></li>
-          <li><NavLink to="/filter/top">Top</NavLink></li>
-          <li><NavLink to="/filter/topic">Topic</NavLink></li>
+          <li><NavLink to="/filter/top" activeClassName="active">Top</NavLink></li>
+          <li><NavLink to="/filter/topic" activeClassName="active">Topic</NavLink></li>
         </ul>
       </div>
     );

@@ -473,11 +473,18 @@ img {
       font-size: rem(14);
       display: block;
     }
+    a {
+      display: block;
+      opacity: .3;
+      &.active {
+        opacity: 1;
+      }
+    }
   }
 }
 
-.mock-text {
-  width: 100%;
-  text-align: center;
-  padding: 5rem;
+.block-view {
+  background: $color-white;
+  min-height: 100vh;
 }
+
